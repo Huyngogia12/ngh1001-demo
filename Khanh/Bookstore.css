@@ -1,0 +1,497 @@
+@import url(https://fonts.googleapis.com/css?family=Frank%20Ruhl%20Libre);
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family:'Frank Ruhl Libre', sans-serif;
+}
+
+/*
+@import url(https://fonts.googleapis.com/css?family=Frank%20Ruhl%20Libre);
+
+/* Reset CSS */
+/*
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Frank Ruhl Libre', sans-serif;
+}
+
+/*
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới
+3,Từ tổng quan đến chi tiết 
+ */
+
+/* 
+1.Vị trí
+2.Kích thước
+3.Màu sắc
+4.Kiểu dáng (kiểu chữ, hình tròn,...)
+ */
+
+
+#header {
+    position: relative;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 2px 2px 2px #aaa;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav li a {
+    color: #000;
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#header #nav li a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+      position:relative;
+    transition:0.5s color ease;
+  }
+
+#header #nav li a.before:before,a.after:after {
+    content: "";
+     transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+    position:absolute;
+}
+
+#header #nav li a.before:before{
+    top:-0.1em;
+}
+
+#header #nav li a.after:after{
+    bottom:-0.25em;
+}
+
+#header #nav li a.before:before,a.after:after{
+    height:2px;
+    height:0.1rem;
+    width:0;
+    background:#000;
+}
+
+#header #nav li a.first:after{
+    left:0px;
+}
+
+#header #nav li a.before:hover:before,a.after:hover:after{
+    width:100%;
+}
+
+/* side-bar */
+
+#header .cart-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(120vh - 9.5rem);
+    width: 30rem;
+    background: #010103;
+    padding:0 1.5rem;
+  }
+  
+  #header .cart-items-container.active{
+    right: 0;
+  }
+  
+  #header .cart-items-container .cart-item{
+    position: relative;
+    margin:2rem 0;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+  }
+  
+  #header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top:1rem; right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  #header .cart-items-container .cart-item .fa-times:hover{
+    color:#d3ad7f;
+  }
+  
+  #header .cart-items-container .cart-item img{
+    height: 7rem;
+  }
+  
+  #header .cart-items-container .cart-item .content h3{
+    font-size: 1.5rem;
+    color:#fff;
+    padding-bottom: .5rem;
+  }
+  
+  #header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color:#d3ad7f;
+  }
+
+#header .icon-btn {
+    float: right;
+}
+
+#header .shopping-cart-icon {
+    color: #000;
+    font-size: 20px;
+    line-height: 100px;
+    position: absolute;
+    right: 90px;
+    font-weight: bold;
+}
+
+#header .user-icon {
+    color: #000;
+    font-size: 20px;
+    line-height: 100px;
+    position: absolute;
+    right: 40px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #header .user-icon:hover {
+    color: #1e8449;
+  }
+
+#header .shopping-cart-icon:hover {
+    cursor: pointer;
+    color: #d3ad7f;
+}
+
+#header .icon-btn2 {
+    float: right;
+}
+
+#header .facebook-icon {
+    line-height: 100px;
+    position: absolute;
+    font-size: 15px;
+    right: 250px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .facebook-icon:hover {
+    color: #4267b2;
+}
+
+#header .twitter-icon {
+    line-height: 100px;
+    position: absolute;
+    font-size: 15px;
+    right: 200px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .twitter-icon:hover {
+    color: #1DA1F2;
+}
+
+#header .instagram-icon {
+    line-height: 100px;
+    position: absolute;
+    right: 150px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .instagram-icon:hover {
+    color: #c64b8c;
+}
+
+#header .logo {
+    float: left;
+}
+
+#header .logo img {
+    width: 300px;
+    padding: 1px;
+    position: absolute;
+    left: 40px;
+}
+
+.lowermain{
+    display: flex;
+    justify-content: space-around;
+    background-color: #efefef;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.lowermain .left{
+    flex:0.5;
+    margin: 50px 50px 0 200px;
+    background-color: white;
+    padding: 90px 50px 90px 50px;
+
+}
+.lowermain .left ul li h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.lowermain .left ul li p{
+    font-size: 20px;
+    padding: 20px 10px;
+}
+.left ul a{
+    color: black;
+}
+.search{
+    padding: 20px 5px;
+    display: flex;
+}
+.search input{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 10px;
+
+}
+.search button{
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    border-width: 1px;
+    border-left: 0px;
+}
+.category{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.category li{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.genres{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.genres li{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.author{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.author li{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.top-rated li{
+    display: flex;
+    justify-content: left;
+}
+.top-rated li div{
+    margin: 10px;
+
+}
+.top-rated div img{
+    vertical-align: middle;
+}
+.top-rated div a{
+    color: black;
+}
+
+.lowermain .right{
+    flex:2;
+    margin-top: 140px;
+    margin-right: 200px;
+}
+.lowermain .right ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.lowermain .right ul.products li{
+   flex-basis: 40%;
+}
+
+.product_pic{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.product_info{
+    margin: 20px;
+  
+}
+.product_info .product_name{
+    font-size: 25px;
+    padding: 20px 0;
+    font-weight: 600;
+    color: black;
+}
+.product_info .product_author{
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+.product_info .product_price{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.lowermain .vietnamese-book:hover {
+    color: #ca2a2a;
+}
+
+/* Contact */
+#contact {
+    background-color: #1D1E21;
+    height: 480px;
+}
+
+#contact .contact-section {
+    padding: 100px 300px;
+    color: #fff;
+}
+
+
+#contact .contact-heading {
+    font-size: 28px;
+}
+
+#contact .contact-place {
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+#contact .mail {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+#contact  .tel {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#contact .icon-btn3 {
+    margin-top: 30px;
+    letter-spacing: 20px;
+}
+
+#contact .facebook-icon {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact .facebook-icon:hover {
+    color: #4267b2;
+}
+
+#contact .instagram-icon {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#contact .instagram-icon:hover {
+    color: #c64b8c;
+}
+
+#contact .twitter-icon {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact .twitter-icon:hover {
+    color: #1DA1F2;
+}
+
+#contact .footer {
+    position: absolute;
+    margin-top: 50px;
+    font-size: 15px;
+    right: 650px;
+}
+
+
+#contact .footer-heading {
+    position: absolute;
+    font-family: 'SH Imogen Agnes',sans-serif;
+    font-size: 40px;
+    top:3860px;
+    letter-spacing: 5px;
+    right: 715px;
+    padding: 12px 0;
+}
+
+#contact hr {
+    margin-top: 30px;
+}
+
+#contact .contact-member {
+    position: absolute;
+    right: 750px;
+}
+
+#contact .contact-personal {
+    font-size: 28px;
+}
+
+#contact .personal {
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+#contact .contact-about-us {
+    position: absolute;
+    right: 320px;
+}
+
+#contact .contact-about {
+    font-size: 28px;
+}
+
+#contact .contact-script {
+    margin-top: 20px;
+    font-size: 17px;
+}

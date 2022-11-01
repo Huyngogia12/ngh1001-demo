@@ -1,0 +1,437 @@
+@import url(https://fonts.googleapis.com/css?family=Frank%20Ruhl%20Libre);
+
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Frank Ruhl Libre", sans-serif;
+}
+
+/*
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới
+3,Từ tổng quan đến chi tiết 
+ */
+
+/* 
+1.Vị trí
+2.Kích thước
+3.Màu sắc
+4.Kiểu dáng (kiểu chữ, hình tròn,...)
+ */
+
+#main {
+}
+
+body {
+  max-width: 100%;
+}
+
+#header {
+  position: relative;
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 2px 2px 2px #aaa;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav li {
+  display: inline;
+}
+
+#nav li a {
+  color: #000;
+  text-decoration: none;
+  margin-top: 40px;
+  padding: 0 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+#header #nav li a,
+a:visited,
+a:hover,
+a:active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  transition: 0.5s color ease;
+}
+
+#header #nav li a.before:before,
+a.after:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+#header #nav li a.before:before {
+  top: -0.1em;
+}
+
+#header #nav li a.after:after {
+  bottom: -0.25em;
+}
+
+#header #nav li a.before:before,
+a.after:after {
+  height: 2px;
+  height: 0.1rem;
+  width: 0;
+  background: #000;
+}
+
+#header #nav li a.first:after {
+  left: 0px;
+}
+
+#header #nav li a.before:hover:before,
+a.after:hover:after {
+  width: 100%;
+}
+
+#header .icon-btn {
+  float: right;
+}
+
+#header .shopping-cart-icon {
+  color: #000;
+  font-size: 20px;
+  line-height: 100px;
+  position: absolute;
+  right: 90px;
+  font-weight: bold;
+}
+
+#header .user-icon {
+  color: #000;
+  font-size: 20px;
+  line-height: 100px;
+  position: absolute;
+  right: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header .user-icon:hover {
+  color: #1e8449;
+}
+
+#header .shopping-cart-icon:hover {
+  cursor: pointer;
+  color: #d3ad7f;
+}
+
+#header .icon-btn2 {
+  float: right;
+}
+
+#header .facebook-icon {
+  line-height: 100px;
+  position: absolute;
+  font-size: 15px;
+  right: 250px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+#header .facebook-icon:hover {
+  color: #4267b2;
+}
+
+#header .twitter-icon {
+  line-height: 100px;
+  position: absolute;
+  font-size: 15px;
+  right: 200px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+#header .twitter-icon:hover {
+  color: #1da1f2;
+}
+
+#header .instagram-icon {
+  line-height: 100px;
+  position: absolute;
+  right: 150px;
+  font-weight: bolder;
+  font-size: 15px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+#header .instagram-icon:hover {
+  color: #c64b8c;
+}
+
+#header .logo {
+  float: left;
+}
+
+#header .logo img {
+  width: 300px;
+  padding: 1px;
+  position: absolute;
+  left: 40px;
+}
+
+/* slider */
+#slider {
+  position: relative;
+  margin-top: 100px;
+  padding-top: 37%;
+  background: url("/bookstore/assets/img/slider/slider1.png") top center/ cover
+    no-repeat;
+}
+
+#slider .background-overlay {
+  background-color: #0f0f0f;
+  opacity: 0.4;
+  /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+#slider .text-content {
+  position: absolute;
+  color: #fff;
+  bottom: 228px;
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+#slider .text-description {
+  font-size: 60px;
+  margin-top: 15px;
+  letter-spacing: 0.1em;
+}
+
+#slider .icon2-btn {
+  position: absolute;
+  right: 60px;
+  bottom: 30px;
+}
+
+#slider .icon2-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#slider .arrow-down-icon {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* blog-section */
+
+#content {
+}
+#content h1 {
+  font-size: 15px;
+  font-family: "frank ruhl libre", sans-serif;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.95px;
+  color: var(--theme-color-text_dark);
+}
+
+#content h2 {
+  font-family: "frank ruhl libre", sans-serif;
+
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.content1 {
+  margin-top: 200px;
+  width: 100vw;
+  padding: 50px 150px;
+}
+.content1 .img-wrap {
+    display: flex;
+}
+.content1 h2 {
+  font-size: 30px;
+  font-weight: 600;
+  width: 40vw;
+  padding-top: 10px;
+}
+.content1 #img1 {
+  color: #545657;
+  border-radius: 20px;
+  width: 30vw;
+  margin: 20px 80px 0 60px;
+}
+.content1 #img2 {
+  margin: -80px 0 100px 50px;
+  border-radius: 20px;
+  width: 35vw;
+}
+
+.content2 {
+  width: 100vw;
+  padding: 50px 150px;
+}
+.content2 .box {
+  width: 18vw;
+  height: 80px;
+  padding: 10px;
+}
+.content2 .box h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.content2 .box p {
+  font-size: 60px;
+}
+
+.content3 {
+  background-color: #1d1e21;
+  padding: 40px;
+  margin-top: 100px;
+  width: 100vw;
+  height: 80vh;
+  padding: 50px 150px;
+}
+
+.box-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.content3 .box {
+  width: 25vw;
+  height: 60vh;
+  padding: 35px;
+  border: 8px;
+  background-color: white;
+  border-radius: 20px;
+}
+.content3 .box p {
+  font-size: 16px;
+  font-weight: lighter;
+  width: 20vw;
+  margin-bottom: 15px;
+}
+
+.content3 h1 {
+  color: #fff !important;
+}
+
+.content3 .box h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content3 .box img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 55px;
+}
+
+.content4 {
+  background-color: #1d1e21;
+  padding: 40px;
+  margin-top: 70px;
+  width: 100vw;
+  height: 50vh;
+  padding-left: 50px;
+  text-align: center;
+}
+.content4 h1 {
+  padding: 10px 5px 0 -5px;
+  color: white !important;
+}
+.content4 h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px 5px 0 -5px;
+  margin: 15px;
+  color: white;
+}
+.content4 input {
+  margin: 15px;
+  height: 60px;
+  width: 500px;
+  border: #000;
+  text-align: center;
+}
+.content4 .email {
+}
+.content4 button {
+  margin: 15px;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  border: rgb(102, 37, 37) 3px;
+  content: "\e9e3";
+  font-family: fontello;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 18px;
+}
+.content4 .check {
+  height: 20px;
+  width: 20px;
+  border: #000 3px;
+  margin-top: 25px;
+  background-color: #000;
+}
+.content4 .text {
+  font-family: "frank ruhl libre", sans-serif;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 15px;
+  color: white;
+}
+.content4 #agree {
+  font-family: "frank ruhl libre", sans-serif;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 15px;
+  color: white;
+  padding-top: -10px;
+}
+
+#footer {
+}
+
+.ti-arrow-right {
+  color: #000;
+}

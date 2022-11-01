@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Frank%20Ruhl%20Libre);
+
+html {
+    font-family:'Frank Ruhl Libre', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#main {
+
+}
+
+#header {
+    position: relative;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 2px 2px 2px #aaa;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav li a {
+    color: #000;
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#header #nav li a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+      position:relative;
+    transition:0.5s color ease;
+  }
+
+#header #nav li a.before:before,a.after:after {
+    content: "";
+     transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+    position:absolute;
+}
+
+#header #nav li a.before:before{
+    top:-0.1em;
+}
+
+#header #nav li a.after:after{
+    bottom:-0.25em;
+}
+
+#header #nav li a.before:before,a.after:after{
+    height:2px;
+    height:0.1rem;
+    width:0;
+    background:#000;
+}
+
+#header #nav li a.first:after{
+    left:0px;
+}
+
+#header #nav li a.before:hover:before,a.after:hover:after{
+    width:100%;
+}
+
+#header .icon-btn {
+    float: right;
+}
+
+#header .shopping-cart-icon {
+    color: #000;
+    font-size: 20px;
+    line-height: 100px;
+    position: absolute;
+    right: 90px;
+    font-weight: bold;
+}
+
+#header .shopping-cart-icon:hover {
+    cursor: pointer;
+    color: #d3ad7f;
+}
+
+#header .user-icon {
+    color: #000;
+    font-size: 20px;
+    line-height: 100px;
+    position: absolute;
+    right: 40px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #header .user-icon:hover {
+    color: #1e8449;
+  }
+  
+
+#header .icon-btn2 {
+    float: right;
+}
+
+#header .facebook-icon {
+    line-height: 100px;
+    position: absolute;
+    font-size: 15px;
+    right: 250px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .facebook-icon:hover {
+    color: #4267b2;
+}
+
+#header .twitter-icon {
+    line-height: 100px;
+    position: absolute;
+    font-size: 15px;
+    right: 200px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .twitter-icon:hover {
+    color: #1DA1F2;
+}
+
+#header .instagram-icon {
+    line-height: 100px;
+    position: absolute;
+    right: 150px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .instagram-icon:hover {
+    color: #c64b8c;
+}
+
+#header .logo {
+    float: left;
+}
+
+#header .logo img {
+    width: 300px;
+    padding: 1px;
+    position: absolute;
+    left: 40px;
+}
+.main {
+background-color: #efefef;
+display: flex;
+padding: 100px 300px ;
+}
+.main .left{
+    flex:1;
+    padding: 50px 50px 10px 50px;
+}
+.main .right{
+    flex:1;
+    padding: 50px 50px 50px 10px;
+}
+.right h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.right h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.right h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.right p{
+    font-size: 20px;
+    padding-bottom: 20px;   
+}
+.right table{
+    text-align: left;
+}
+.right table tr td{
+    padding: 10px 30px 10px 0px;
+    font-size: 20px;
+}
+.right .buy-now a{ 
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-family: sans-serif;
+    display: block;
+    background-color: #A9A9A9;
+    color: black;
+    padding: 20px;
+    margin-top: 70px;
+    width: 30%;
+}
+.related-product{
+    font-size: 40px;
+    padding: 15px 0px 00px 340px;
+    background-color: #efefef;
+}
+.down{
+    background-color: #efefef;
+    display: flex;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 340px;
+    padding-right: 340px;
+}
+
+.product_item #1{
+    flex: 1;
+}
+
+.product_item #2{
+    flex:1;
+
+}
+.product_item #3{
+    flex:1;
+}
+.product_pic{
+    padding-bottom: 15px;
+}
+.product_name{
+    font-size: 30px;
+    color: black;
+}
+.product_author{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.product_price{
+    font-size: 20px;
+}

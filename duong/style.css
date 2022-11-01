@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css?family=Frank%20Ruhl%20Libre);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Frank Ruhl Libre', sans-serif ;
+	background-color: white;
+	padding:0px;
+	margin: 0px;
+}
+#header {
+    position: relative;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 2px 2px 2px #aaa;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav li a {
+    color: #000;
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#header #nav li a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+      position:relative;
+    transition:0.5s color ease;
+  }
+
+#header #nav li a.before:before,a.after:after {
+    content: "";
+     transition:0.5s all ease;
+    -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+    position:absolute;
+}
+
+#header #nav li a.before:before{
+    top:-0.1em;
+}
+
+#header #nav li a.after:after{
+    bottom:-0.25em;
+}
+
+#header #nav li a.before:before,a.after:after{
+    height:2px;
+    height:0.1rem;
+    width:0;
+    background:#000;
+}
+
+#header #nav li a.first:after{
+    left:0px;
+}
+
+#header #nav li a.before:hover:before,a.after:hover:after{
+    width:100%;
+}
+
+#header .icon-btn {
+    float: right;
+}
+
+#header .shopping-cart-icon {
+    color: #000;
+    font-size: 20px;
+    line-height: 100px;
+    position: absolute;
+    right: 90px;
+    font-weight: bold;
+}
+
+#header .shopping-cart-icon:hover {
+    cursor: pointer;
+    color: #d3ad7f;
+}
+
+
+#header .user-icon {
+    color: #000;
+    font-size: 20px;
+    line-height: 100px;
+    position: absolute;
+    right: 40px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #header .user-icon:hover {
+    color: #1e8449;
+  }
+  
+#header .icon-btn2 {
+    float: right;
+}
+
+#header .facebook-icon {
+    line-height: 100px;
+    position: absolute;
+    font-size: 15px;
+    right: 250px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .facebook-icon:hover {
+    color: #4267b2;
+}
+
+#header .twitter-icon {
+    line-height: 100px;
+    position: absolute;
+    font-size: 15px;
+    right: 200px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .twitter-icon:hover {
+    color: #1DA1F2;
+}
+
+#header .instagram-icon {
+    line-height: 100px;
+    position: absolute;
+    right: 150px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+#header .instagram-icon:hover {
+    color: #c64b8c;
+}
+
+#header .logo {
+    float: left;
+}
+
+#header .logo img {
+    width: 300px;
+    padding: 1px;
+    position: absolute;
+    left: 40px;
+}
+.shop {
+	margin-bottom: 80px;
+}
+.sanpham{
+	margin: 30px 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	
+}
+.sanpham-item{
+	padding: 0 60px;
+
+}
+.sanpham{
+	margin-left: 50px;
+}
+ul.sanpham{
+	margin-left: 80px;
+	width: 100%;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	
+
+}
+ul.sanpham li{
+	
+	margin-bottom: 30px;
+
+}
+ul.sanpham li img{
+	width: 280px;
+	height: 400px;
+	
+}
+
+.sanpham-duoi a{
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color: #534C4C;
+	padding: 3px 0;
+	margin: 10px;
+}
+.sanpham-gia{
+	padding-left: 10px ;
+	font-size: 20px;
+}
+ul.sanpham li .sanpham-tren{
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 10px 30px 0 black;
+}
+ul.sanpham li .sanpham-tren .sanpham-anh{
+	display: block;
+}
+ul.sanpham li .sanpham-tren .sanpham-anh img{
+	display: block;
+}
+ul.sanpham li .sanpham-tren a.Buynow{
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background-color: #456952;
+	color: white;
+	padding: 10px 0px;
+	position: absolute;
+	width: 280px;
+	bottom: -36px;
+	transition: 0.25s ease-in-out;
+	opacity: 0.85;
+
+}
+ul.sanpham li:hover a.Buynow{
+	bottom: 0px;
+}
+.search-main{
+	background-color: #000000;
+ 	max-width: 960px;
+ 	height: 50px;
+ 	margin: 0px auto;
+ 	display: flex;
+}
+.search-main div a.chinh{
+	 padding-left: 20px;
+    padding-right: 10px;
+    width: 185px;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-right: 1px solid rgba(0,0,0,0.3) ;
+    
+}
+.search-main div{
+	position: relative;
+	
+}
+.search-main div a{
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+.search-main ul.con{
+	margin-top: 1px;
+	position: absolute;
+	background-color:#000000 ;
+	padding: 15px 0px;
+	list-style: none;
+	width: 200px;
+	display: none;
+	z-index: 1;
+}
+.search-main div:hover ul.con{
+	transition: 0.25s ease-in-out;
+	display: block;
+}
+.search-main ul.con a{
+	padding: 8px 15px;
+	border-bottom: 1px solid #333;
+}
+.search-main ul.con li:hover a{
+	border-bottom: 1px solid #CCC4C4;
+	transition: 0.25s ease-in-out;
+}
+.search-main ul.con li:last-child a{
+
+	border: none;
+}
+.search-4{
+	
+    display: flex;
+     height: 100%;
+    width: 320px;
+    background-color: gray;
+    border: 0;
+    text-align: center;
+}
+.search-4 input{
+	width: 270px;
+}
+.search-4 button img{
+	width: 50px;
+	height: 100%;
+	display: block;
+}
+.search-4 button{
+	width: 50px;
+}
+.search-input-btn:hover{
+
+    
+    background-color: #746D6D;
+}
+
+#content {
+    margin-top: 180px;
+}
+
+/* Contact */
+#contact {
+    background-color: #1D1E21;
+    height: 480px;
+}
+
+#contact .contact-section {
+    padding: 100px 300px;
+    color: #fff;
+}
+
+#contact .contact-infor {
+
+}
+
+#contact .contact-heading {
+    font-size: 28px;
+}
+
+#contact .contact-place {
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+#contact .mail {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+#contact  .tel {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#contact .icon-btn3 {
+    margin-top: 30px;
+    letter-spacing: 20px;
+}
+
+#contact .facebook-icon {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact .facebook-icon:hover {
+    color: #4267b2;
+}
+
+#contact .instagram-icon {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#contact .instagram-icon:hover {
+    color: #c64b8c;
+}
+
+#contact .twitter-icon {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact .twitter-icon:hover {
+    color: #1DA1F2;
+}
+
+#contact .footer {
+    position: absolute;
+    margin-top: 50px;
+    font-size: 15px;
+    right: 650px;
+}
+
+
+#contact .footer-heading {
+    position: absolute;
+    font-family: 'SH Imogen Agnes',sans-serif;
+    font-size: 40px;
+    top:3860px;
+    letter-spacing: 5px;
+    right: 715px;
+    padding: 12px 0;
+}
+
+#contact hr {
+    margin-top: 30px;
+}
+
+#contact .contact-member {
+    position: absolute;
+    right: 750px;
+}
+
+#contact .contact-personal {
+    font-size: 28px;
+}
+
+#contact .personal {
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+#contact .contact-about-us {
+    position: absolute;
+    right: 320px;
+}
+
+#contact .contact-about {
+    font-size: 28px;
+}
+
+#contact .contact-script {
+    margin-top: 20px;
+    font-size: 17px;
+}
